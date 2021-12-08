@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admincontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,115 +14,37 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('index', function() {
-    return view('index');
-});
-
-Route::get('ui-buttons', function() {
-    return view('ui-buttons');
-});
-
-Route::get('ui-badges', function() {
-    return view('ui-badges');
-});
-
-Route::get('ui-tabs', function() {
-    return view('ui-tabs');
-});
-
-Route::get('ui-social buttons', function() {
-    return view('ui-socialbuttons');
-});
-
-Route::get('ui-cards', function() {
-    return view('ui-cards');
-});
-
-Route::get('ui-alerts', function() {
-    return view('ui-alerts');
-});
-
-Route::get('ui-progress bars', function() {
-    return view('ui-progressbars');
-});
-
-Route::get('ui-modals', function() {
-    return view('ui-modals');
-});
-
-Route::get('ui-switches', function() {
-    return view('ui-switches');
-});
-
-Route::get('ui-grids', function() {
-    return view('ui-grids');
-});
-
-Route::get('ui-typography', function() {
-    return view('ui-typography');
-});
-
-Route::get('tabels-basic', function() {
-    return view('tabels-basic');
-});
-
-Route::get('tables-data', function() {
-    return view('tabels-data');
-});
-
-Route::get('forms-basic', function() {
-    return view('forms-basic');
-});
-
-Route::get('forms-advanced', function() {
-    return view('forms-advance');
-});
-
-Route::get('font-fontawesome', function() {
-    return view('font-fontawesome');
-});
-
-Route::get('font-themify', function() {
-    return view('font-themify');
-});
-
-Route::get('widgets', function() {
-    return view('widgets');
-});
-
-Route::get('charts-chartjs', function() {
-    return view('charts-chartjs');
-});
-
-Route::get('charts-flot', function() {
-    return view('charts-flot');
-});
-
-Route::get('charts-peity', function() {
-    return view('charts-peity');
-});
-
-Route::get('maps-gmap', function() {
-    return view('maps-gmap');
-});
-
-Route::get('maps-vector', function() {
-    return view('maps-vector');
-});
-
-Route::get('page-login', function() {
-    return view('page-login');
-});
-
-Route::get('page-register', function() {
-    return view('page-register');
-});
-
-Route::get('page-forgetpass', function() {
-    return view('page-forgetpass');
-});
-
+Route::get('Addproduct',[admincontroller::class,'Addproduct']);
+Route::get('alogin',[admincontroller::class,'alogin']);
+Route::get('buy',[admincontroller::class,'buy']);
+Route::get('contactFrom',[admincontroller::class,'contactFrom']);
+Route::get('/',[admincontroller::class,'dashboard']);
+Route::get('desc',[admincontroller::class,'desc']);
+Route::get('edittitle',[admincontroller::class,'edittitle']);
+Route::get('FAQ',[admincontroller::class,'FAQ']);
+Route::get('FF',[admincontroller::class,'FF']);
+Route::get('footerHP',[admincontroller::class,'footerHP']);
+Route::get('footerHP2',[admincontroller::class,'footerHP2']);
+Route::get('footerHP3',[admincontroller::class,'footerHP3']);
+Route::get('hlogin',[admincontroller::class,'hlogin']);
+Route::get('homepage',[admincontroller::class,'homepage']);
+Route::get('login',[admincontroller::class,'login']);
+Route::get('ML',[admincontroller::class,'ML']);
+Route::get('namamerchant',[admincontroller::class,'namamerchant']);
+Route::get('namamerchant2',[admincontroller::class,'namamerchant2']);
+Route::get('namamerchant3',[admincontroller::class,'namamerchant3']);
+Route::get('payment',[admincontroller::class,'payment']);
+Route::get('profil',[admincontroller::class,'profil']);
+Route::get('PUBG',[admincontroller::class,'PUBG']);
+Route::get('rediscache',[admincontroller::class,'rediscache']);
+Route::get('resetindex1',[admincontroller::class,'resetindex1']);
+Route::get('resetindex2',[admincontroller::class,'resetindex2']);
+Route::get('resetindex2',[admincontroller::class,'resetindex3']);
+Route::get('setting',[admincontroller::class,'setting']);
+Route::get('settingproduct',[admincontroller::class,'settingproduct']);
+Route::get('settingproduct2',[admincontroller::class,'settingproduct2']);
+Route::get('settingproduct3',[admincontroller::class,'settingproduct3']);
+Route::get('statusfeedback',[admincontroller::class,'statusfeedback']);
+Route::get('testimoni',[admincontroller::class,'testimoni']);
+Route::get('uvmerchant',[admincontroller::class,'uvmerchant']);
+Route::get('vmerchant',[admincontroller::class,'vmerchant']);
